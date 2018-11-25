@@ -4,8 +4,9 @@ body {
 }
 
 h1{
-  color:blue;
-text-decoration: underline;
+  color:#404040;
+  font-family: Courier New;
+  text-align: center;
 }
 
 h2{
@@ -13,7 +14,7 @@ h2{
   text-decoration: fade;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a dark grey background color to the top navigation */
 .topnav {
     background-color: #404040;
     overflow: hidden;
@@ -22,10 +23,11 @@ h2{
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #ccffe6;
+    color: #F8F8F8;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: Courier New;
     font-size: 17px;
 }
 
@@ -37,6 +39,6 @@ h2{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #404040;
-    color: white;
+    background-color: #888888;
+    color: #F8F8F8;
 }
