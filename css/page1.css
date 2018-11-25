@@ -1,8 +1,11 @@
+
+body {
+    background-color: #e6e6ff;
+}
+
 h1{
   color:blue;
 text-decoration: underline;
-
-background-color: #e6e6ff
 }
 
 h2{
