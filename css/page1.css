@@ -15,7 +15,7 @@ h2{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #ccffe6;
+    background-color: #404040;
     overflow: hidden;
 }
 
@@ -37,6 +37,6 @@ h2{
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #ccffe6;
+    background-color: #404040;
     color: white;
 }
