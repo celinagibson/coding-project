@@ -23,13 +23,22 @@ form{
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Navigation bar colour */
+=======
+
+/* Dark grey background color to the top navigation */
+>>>>>>> Tara-branch
 .topnav {
     background-color: #404040;
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 /* Links inside the navigation bar */
+=======
+/* Style of links inside the navigation bar */
+>>>>>>> Tara-branch
 .topnav a {
     float: left;
     color: #F8F8F8;
@@ -40,13 +49,21 @@ form{
     font-size: 17px;
 }
 
+<<<<<<< HEAD
 /* Links on hover */
+=======
+/* Color of links on hover change*/
+>>>>>>> Tara-branch
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
+<<<<<<< HEAD
 /* Color of the active link */
+=======
+/* Color added to the active link */
+>>>>>>> Tara-branch
 .topnav a.active {
     background-color: #888888;
     color: #F8F8F8;
@@ -61,25 +78,38 @@ form{
     text-decoration: none;
     border-radius: 50%;
 }
+<<<<<<< HEAD
 
 /* Social buttons on hover */
+=======
+/* Hover effect - gets lighter */
+>>>>>>> Tara-branch
 .fa:hover {
     opacity: 0.7;
 }
 
+<<<<<<< HEAD
 /* Facebook */
+=======
+
+/* Facebook - blue */
+>>>>>>> Tara-branch
 .fa-facebook {
     background: #3B5998;
     color: white;
 }
 
-/* Twitter */
+/* Twitter - light blue */
 .fa-twitter {
     background: #55ACEE;
     color: white;
 }
 
+<<<<<<< HEAD
 /* Instagram */
+=======
+/* Instagram - pink */
+>>>>>>> Tara-branch
 .fa-instagram {
     background: #cc00cc;
     color: white;
