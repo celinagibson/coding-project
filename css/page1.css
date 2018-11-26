@@ -10,8 +10,17 @@ h1{
 }
 
 h2{
-  color:#a8c9ff;
+  color: #888888;
+  font-family: Courier New;
+  text-align: center;
   text-decoration: fade;
+}
+
+form{
+  color:#888888;
+  font-family: Courier New;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Add a dark grey background color to the top navigation */
