@@ -23,13 +23,13 @@ form{
   font-weight: bold;
 }
 
-/* Add a dark grey background color to the top navigation */
+/* Navigation bar colour */
 .topnav {
     background-color: #404040;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Links inside the navigation bar */
 .topnav a {
     float: left;
     color: #F8F8F8;
@@ -40,32 +40,32 @@ form{
     font-size: 17px;
 }
 
-/* Change the color of links on hover */
+/* Links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Add a color to the active/current link */
+/* Color of the active link */
 .topnav a.active {
     background-color: #888888;
     color: #F8F8F8;
 }
 
+/* Style of social buttons */
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: 80px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
 }
-/* Add a hover effect if you want */
+
+/* Social buttons on hover */
 .fa:hover {
     opacity: 0.7;
 }
-
-/* Set a specific color for each brand */
 
 /* Facebook */
 .fa-facebook {
@@ -79,6 +79,7 @@ form{
     color: white;
 }
 
+/* Instagram */
 .fa-instagram {
     background: #cc00cc;
     color: white;
