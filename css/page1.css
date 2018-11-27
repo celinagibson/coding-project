@@ -16,12 +16,20 @@ h2{
   text-decoration: fade;
 }
 
+p{
+  color: #888888;
+  font-family: Courier New;
+  text-align: center;
+  text-decoration: fade;
+}
+
 form{
   color:#888888;
   font-family: Courier New;
   text-align: center;
   font-weight: bold;
 }
+
 
 /* Navigation bar colour */
 .topnav {
@@ -83,4 +91,15 @@ form{
 .fa-instagram {
     background: #cc00cc;
     color: white;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
