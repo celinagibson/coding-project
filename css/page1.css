@@ -29,15 +29,19 @@ form{
   font-weight: bold;
 }
 
+#call2{
+  background-color: lightblue;
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-column {
+.column {
   float: left;
   width: 33.33%;
-  padding: 50px;
+  padding: 0px;
 }
 
 /* Clear floats after image containers */
-row::after {
+.row::after {
   content: "";
   clear: both;
   display: table;
