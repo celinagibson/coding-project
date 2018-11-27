@@ -123,6 +123,7 @@ row::after {
     clear: both;
 }
 
+/* Border and text in contact form */
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -133,6 +134,8 @@ input[type=text] {
     font-family: Courier New;
     font-size:20px;
 }
+
+/* border, style and text in submit button */
 input[type=button] {
     padding:5px 15px;
     background:#ccc;
