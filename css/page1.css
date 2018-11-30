@@ -39,6 +39,13 @@ form{
   background-color: #cce5ff;
 }
 
+
+/*this makes the columns equal height */
+.container-fluid        { display: table; border-collapse: separate; border-spacing:0;}
+.row                   { display: table-row;}
+.column                { display: table-cell;}
+
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -58,7 +65,7 @@ form{
   .column {
     width: 100%;
   }
-}
+
 
 /* Navigation bar colour */
 .topnav {
@@ -121,17 +128,7 @@ form{
     background: #cc00cc;
     color: white;
 }
-.column {
-    float: left;
-    width: 33.33%;
-}
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* Border and text in contact form */
 input[type=text] {
