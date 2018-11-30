@@ -1,6 +1,6 @@
 
 body {
-    background-color: #e6e6ff;
+    background-color: #b3d7ff;
 }
 
 h1{
@@ -28,9 +28,15 @@ form{
   text-align: center;
   font-weight: bold;
 }
-
-#call2{
-  background-color: lightblue;
+/*change colour when scrolled over*/
+#call1:hover{
+  background-color: #cce5ff;
+}
+#call2:hover{
+  background-color: #cce5ff;
+}
+#call3:hover{
+  background-color: #cce5ff;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
