@@ -40,12 +40,6 @@ form{
 }
 
 
-/*this makes the columns equal height */
-.container-fluid        { display: table; border-collapse: separate; border-spacing:0;}
-.row                   { display: table-row;}
-.column                { display: table-cell;}
-
-
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -60,12 +54,21 @@ form{
   display: table;
 }
 
+
+/*this makes columns equal*/
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
   }
-
+}
 
 /* Navigation bar colour */
 .topnav {
