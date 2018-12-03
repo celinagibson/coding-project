@@ -7,6 +7,13 @@
 <title>Brunch Places</title>
 <Link rel="stylesheet" type="text/css" href = "css/page1.css"/>
 <!-- page1.css is the main stylesheet -->
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
 
 
 </head>
@@ -38,6 +45,8 @@
     </div>
   </div>
 
+<a href="#unique-identifier">convinced? get there!!</a>
+<!--this is a link to the bottom of the page-->
 
   <div class="row">
     <div class="column" id="call1">
@@ -99,13 +108,69 @@
 
     </div>
   </div>
-    <div class="row">
+    <div id="unique-identifier">
       <h2> Getting there </h2>
           <p> Convinced? here's the addresses to the lead you to brunch H-E-A-V-E-N:</p>
     </div>
 
     <div class="row">
         <div class="column">
+          <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+// The following example creates a marker in Stockholm, Sweden using a DROP
+     // animation. Clicking on the marker will toggle the animation between a BOUNCE
+     // animation and no animation.
+
+     var marker;
+
+     function initMap() {
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 13,
+         center: {lat: 59.325, lng: 18.070}
+       });
+
+       marker = new google.maps.Marker({
+         map: map,
+         draggable: true,
+         animation: google.maps.Animation.DROP,
+         position: {lat: 59.327, lng: 18.067}
+       });
+       marker.addListener('click', toggleBounce);
+     }
+
+     function toggleBounce() {
+       if (marker.getAnimation() !== null) {
+         marker.setAnimation(null);
+       } else {
+         marker.setAnimation(google.maps.Animation.BOUNCE);
+       }
+     }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://www.google.co.uk/maps/place/Flat+White+Cafe/@54.7761384,-1.5743399,15z/data=!4m2!3m1!1s0x0:0x802b826266bcb0cc?ved=2ahUKEwi37MHvo_XeAhVMJcAKHZ9-DF0Q_BIwCnoECAYQCA">
+    </script>
+
+
+
+<!-- normal links -->
           <a href="https://www.google.co.uk/maps/place/Flat+White+Cafe/@54.7761384,-1.5743399,15z/data=!4m2!3m1!1s0x0:0x802b826266bcb0cc?ved=2ahUKEwi37MHvo_XeAhVMJcAKHZ9-DF0Q_BIwCnoECAYQCA">Flat White</a>
     <p>21A Elvet Bridge, Durham DH1 3AA</p>
           </div>
