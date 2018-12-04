@@ -7,12 +7,20 @@
 <title>Brunch Places</title>
 <Link rel="stylesheet" type="text/css" href = "css/page1.css"/>
 <!-- page1.css is the main stylesheet -->
-<style>
-       /* Set the size of the div element that contains the map */
+<meta charset="utf-8">
+    <title>Marker Animations</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
       #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
+        height: 100%;
+     }
+     /* Optional: Makes the sample page fill the window. */
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+     }
     </style>
 
 
@@ -45,7 +53,7 @@
     </div>
   </div>
 
-<a href="#unique-identifier">convinced? get there!!</a>
+<a href="#unique-identifier">Convinced? Get there!!</a>
 <!--this is a link to the bottom of the page-->
 
   <div class="row">
@@ -110,63 +118,55 @@
   </div>
     <div id="unique-identifier">
       <h2> Getting there </h2>
-          <p> Convinced? here's the addresses to the lead you to brunch H-E-A-V-E-N:</p>
+          <p> Convinced? Here are the addresses to lead you to brunch H-E-A-V-E-N:</p>
     </div>
 
     <div class="row">
         <div class="column">
-          <h3>My Google Maps Demo</h3>
+          <h3>Locations on Google Map</h3>
+
     <!--The div element for the map -->
     <div id="map"></div>
     <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-
-// The following example creates a marker in Stockholm, Sweden using a DROP
-     // animation. Clicking on the marker will toggle the animation between a BOUNCE
-     // animation and no animation.
-
-     var marker;
-
-     function initMap() {
-       var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 13,
-         center: {lat: 59.325, lng: 18.070}
-       });
-
-       marker = new google.maps.Marker({
-         map: map,
-         draggable: true,
-         animation: google.maps.Animation.DROP,
-         position: {lat: 59.327, lng: 18.067}
-       });
-       marker.addListener('click', toggleBounce);
-     }
-
-     function toggleBounce() {
-       if (marker.getAnimation() !== null) {
-         marker.setAnimation(null);
-       } else {
-         marker.setAnimation(google.maps.Animation.BOUNCE);
-       }
-     }
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://www.google.co.uk/maps/place/Flat+White+Cafe/@54.7761384,-1.5743399,15z/data=!4m2!3m1!1s0x0:0x802b826266bcb0cc?ved=2ahUKEwi37MHvo_XeAhVMJcAKHZ9-DF0Q_BIwCnoECAYQCA">
-    </script>
+           var marker;
+           function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 13,
+              center: {lat: 54.775870, lng: -1.574510}
+             });
+             marker = new google.maps.Marker({
+              map: map,
+              draggable: true,
+              animation: google.maps.Animation.DROP,
+              position: {lat: 54.775870, lng: -1.574510}
+  });
+               marker2 = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: {lat: 54.776930, lng: -1.576887}
+             });
+             marker3 = new google.maps.Marker({
+              map: map,
+              draggable: true,
+              animation: google.maps.Animation.DROP,
+              position: {lat: 54.775920, lng: -1.577550}
+          });
+             marker.addListener('click', toggleBounce);
+            marker2.addListener('click', toggleBounce);
+            marker3.addListener('click', toggleBounce);
+          }
+           function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+              marker.setAnimation(null);
+            } else {
+              marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVjqpPhnZ4jEfABaMJe6JIEuz7w_aEWvQ&callback=initMap">
+        </script>
 
 
 
@@ -179,7 +179,7 @@ function initMap() {
     <p>20-21 Silver St, Durham DH1 3RB</p>
           </div>
           <div class="column">
-            <a href="https://www.google.co.uk/maps/place/Leonards+Coffee+House/@54.776929,-1.576887,15z/data=!4m2!3m1!1s0x0:0xe7ed45020a8176cd?ved=2ahUKEwjv9pePpPXeAhUDDMAKHUsSDM8Q_BIwD3oECAEQCA">Leonard's Coffee House</a>
+            <a href="https://www.google.co.uk/maps/place/Leonards+Coffee+House/@54.776929,-1.576887,15z/data=!4m2!3m1!1s0x0:0xe7ed45020a8176cd?ved=2ahUKEwjv9pePpPXeAhUDDMAKHUsSDM8Q_BIwD3oECAEQCA">Leonard's</a>
     <p>1 Back Silver St, Fowler's Yard, Durham DH1 3RA</p>
         </div>
       </div>
